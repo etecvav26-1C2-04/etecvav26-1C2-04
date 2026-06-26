@@ -62,7 +62,6 @@ Aqui você encontrará os repositórios das disciplinas do nosso curso técnico,
 <br>
 
 ## 📂 Repositórios da organização
-
 <table>
 <tr>
 <th align="left">Repositório</th>
