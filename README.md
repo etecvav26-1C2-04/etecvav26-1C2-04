@@ -83,6 +83,11 @@ Aqui você encontrará os repositórios das disciplinas do nosso curso técnico,
 <td>Programação Web</td>
 <td>Projetos de páginas e estruturação web desenvolvidos no módulo de PW.</td>
 </tr>
+ <tr>
+<td><a href="https://github.com/etecvav26-1C2-04/portfolio-bd"><b>portfolio-bd</b></a></td>
+<td>Banco de Dados</td>
+<td>Atividades de banco de dados.</td>
+</tr>
 <tr>
 <td><a href="https://github.com/etecvav26-1C2-04/teste"><b>teste</b></a></td>
 <td>Prática livre</td>
