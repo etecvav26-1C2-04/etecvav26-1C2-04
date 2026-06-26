@@ -26,7 +26,7 @@ Aqui você encontrará os repositórios das disciplinas do nosso curso técnico,
 <br>
 
 ## 🚀 Team
-
+ 
 <table align="center">
 <tr>
 <td align="center" width="200">
@@ -34,34 +34,36 @@ Aqui você encontrará os repositórios das disciplinas do nosso curso técnico,
 <img src="https://github.com/vikishimoto.png" width="90" style="border-radius:50%"/><br>
 <b>Vitória</b>
 </a><br>
-<sub>@vikishimoto</sub>
+<sub>@vikishimoto</sub><br>
+<a href="https://instagram.com/vii.kishimoto">📸 @vii.kishimoto</a>
 </td>
 <td align="center" width="200">
 <a href="https://github.com/GabiOnaga">
 <img src="https://github.com/GabiOnaga.png" width="90" style="border-radius:50%"/><br>
 <b>Gabriela</b>
 </a><br>
-<sub>@GabiOnaga</sub>
+<sub>@GabiOnaga</sub><br>
+<a href="https://instagram.com/gabi.onaga">📸 @gabi.onaga</a>
 </td>
 <td align="center" width="200">
 <a href="https://github.com/sofiafranzini">
 <img src="https://github.com/sofiafranzini.png" width="90" style="border-radius:50%"/><br>
 <b>Sofia</b>
 </a><br>
-<sub>@sofiafranzini</sub>
+<sub>@sofiafranzini</sub><br>
+<a href="https://instagram.com/sofixzz1">📸 @sofixzz1</a>
 </td>
 <td align="center" width="200">
 <a href="https://github.com/giovannaccabral">
 <img src="https://github.com/giovannaccabral.png" width="90" style="border-radius:50%"/><br>
 <b>Giovanna</b>
 </a><br>
-<sub>@giovannaccabral</sub>
+<sub>@giovannaccabral</sub><br>
+<a href="https://instagram.com/gii.ic_">📸 @gii.ic_</a>
 </td>
 </tr>
 </table>
-
 <br>
-
 ## 📂 Repositórios da organização
 
 <table>
