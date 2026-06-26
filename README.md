@@ -88,6 +88,11 @@ Aqui você encontrará os repositórios das disciplinas do nosso curso técnico,
 <td>Banco de Dados</td>
 <td>Atividades de banco de dados.</td>
 </tr>
+ <tr>
+<td><a href="https://github.com/etecvav26-1C2-04/portfolio-PTIC"><b>portfolio-PTIC</b></a></td>
+<td>Projetos de Tecnologia</td>
+<td>Conteúdos e projetos da matéria.</td>
+</tr>
 <tr>
 <td><a href="https://github.com/etecvav26-1C2-04/teste"><b>teste</b></a></td>
 <td>Prática livre</td>
