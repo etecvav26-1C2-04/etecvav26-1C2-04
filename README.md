@@ -1,14 +1,9 @@
 <p align="center">
   <img src="./org-header-banner.svg" alt="Code Girls" width="100%">
 </p>
-
-
 <div align="center">
 
 <br>
-
-
-
 <br>
 
 ### 👋 Seja bem-vindo(a) ao nosso GitHub!
@@ -16,7 +11,6 @@
 </div>
 
 <br>
-
 ## 💡 Nossa Proposta
 
 Aqui você encontrará os repositórios das disciplinas do nosso curso técnico, além de projetos, atividades e desafios desenvolvidos ao longo da nossa formação.
