@@ -1,0 +1,226 @@
+<svg width="900" height="300" viewBox="0 0 900 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e0a3c"/>
+      <stop offset="45%" stop-color="#150a2e"/>
+      <stop offset="100%" stop-color="#0a0a14"/>
+    </linearGradient>
+
+    <linearGradient id="sweepGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#a855f7" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="border" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="50%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#e9d5ff"/>
+    </linearGradient>
+
+    <radialGradient id="glowSpot" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
+    </radialGradient>
+
+    <filter id="softBlur" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3.5" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <clipPath id="cardClip">
+      <rect x="2" y="2" width="896" height="296" rx="18"/>
+    </clipPath>
+
+    <style>
+      .node-a, .node-b, .node-c {
+        animation-name: twinkle;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+      }
+      @keyframes twinkle {
+        0%, 100% { opacity: 0.25; }
+        50% { opacity: 1; }
+      }
+
+      .circuit-group {
+        animation: drift 10s ease-in-out infinite;
+        transform-origin: 450px 150px;
+      }
+      @keyframes drift {
+        0%, 100% { transform: translate(0px,0px); }
+        50% { transform: translate(3px,-3px); }
+      }
+
+      .glowspot {
+        animation: pulse 6s ease-in-out infinite;
+      }
+      @keyframes pulse {
+        0%, 100% { transform: scale(1); opacity: 0.6; }
+        50% { transform: scale(1.25); opacity: 1; }
+      }
+
+      .sweep {
+        animation: sweepMove 5s linear infinite;
+      }
+      @keyframes sweepMove {
+        0% { transform: translateX(-900px); }
+        100% { transform: translateX(900px); }
+      }
+
+      .cursor {
+        opacity: 0;
+        animation: blink 0.9s steps(1) infinite;
+        animation-delay: 1.50s;
+      }
+      @keyframes blink {
+        0%, 49% { opacity: 1; }
+        50%, 100% { opacity: 0; }
+      }
+
+      .subtitle {
+        opacity: 0;
+        animation: fadeUp 0.9s ease-out forwards;
+        animation-delay: 1.70s;
+      }
+      .badge {
+        opacity: 0;
+        animation: fadeUp 0.8s ease-out forwards;
+        animation-delay: 2.30s;
+      }
+      @keyframes fadeUp {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0px); }
+      }
+    </style>
+  </defs>
+
+  <rect x="2" y="2" width="896" height="296" rx="18" fill="url(#bgGrad)"/>
+
+  <g clip-path="url(#cardClip)">
+    <circle class="glowspot" cx="230" cy="90" r="150" fill="url(#glowSpot)" filter="url(#softBlur)"/>
+    <circle class="glowspot" cx="680" cy="220" r="150" fill="url(#glowSpot)" filter="url(#softBlur)" style="animation-delay:2s;"/>
+
+    <g class="circuit-group">
+<polyline points="351,97 273,97 273,15" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.14"/>
+<polyline points="616,49 616,15 521,15" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.26"/>
+<polyline points="448,55 523,55 523,15" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.28"/>
+<polyline points="665,51 665,117 620,117" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.19"/>
+<polyline points="590,88 392,88 392,15" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.20"/>
+<polyline points="335,112 180,112 180,15" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.13"/>
+<polyline points="749,52 749,15 885,15" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.14"/>
+<polyline points="341,258 341,285 412,285" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.17"/>
+<polyline points="833,112 833,42 885,42" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.16"/>
+<polyline points="526,195 526,285 471,285" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.25"/>
+<polyline points="544,234 642,234 642,285" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.15"/>
+<polyline points="60,59 60,162 176,162" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.12"/>
+<polyline points="528,253 399,253 399,285" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.27"/>
+<polyline points="700,53 885,53 885,129" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.20"/>
+<polyline points="753,217 753,279 838,279" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.14"/>
+<polyline points="192,79 59,79 59,15" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.21"/>
+<polyline points="273,223 353,223 353,126" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.12"/>
+<polyline points="431,162 431,285 561,285" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.20"/>
+<polyline points="445,203 445,285 395,285" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.28"/>
+<polyline points="200,97 137,97 137,212" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.26"/>
+<polyline points="206,154 39,154 39,272" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.23"/>
+<polyline points="599,183 599,65 689,65" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.16"/>
+<polyline points="428,221 503,221 503,173" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.18"/>
+<polyline points="233,245 446,245 446,192" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.15"/>
+<polyline points="20,97 20,235 15,235" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.24"/>
+<polyline points="232,212 380,212 380,285" fill="none" stroke="#7c3aed" stroke-width="1.2" opacity="0.21"/>
+<circle cx="351" cy="97" r="2.1" fill="#c4b5fd" class="node-a" style="animation-delay:3.12s; animation-duration:3.32s;"/>
+<circle cx="273" cy="15" r="3.0" fill="#c4b5fd" class="node-b" style="animation-delay:3.25s; animation-duration:4.96s;"/>
+<circle cx="616" cy="49" r="2.8" fill="#c4b5fd" class="node-c" style="animation-delay:3.22s; animation-duration:4.55s;"/>
+<circle cx="521" cy="15" r="2.3" fill="#c4b5fd" class="node-a" style="animation-delay:0.91s; animation-duration:3.79s;"/>
+<circle cx="448" cy="55" r="2.2" fill="#c4b5fd" class="node-b" style="animation-delay:0.12s; animation-duration:2.57s;"/>
+<circle cx="523" cy="15" r="3.1" fill="#c4b5fd" class="node-c" style="animation-delay:1.04s; animation-duration:4.23s;"/>
+<circle cx="665" cy="51" r="3.2" fill="#c4b5fd" class="node-a" style="animation-delay:1.79s; animation-duration:4.84s;"/>
+<circle cx="620" cy="117" r="2.1" fill="#c4b5fd" class="node-b" style="animation-delay:3.82s; animation-duration:3.41s;"/>
+<circle cx="590" cy="88" r="2.1" fill="#c4b5fd" class="node-c" style="animation-delay:0.91s; animation-duration:2.99s;"/>
+<circle cx="392" cy="15" r="3.0" fill="#c4b5fd" class="node-a" style="animation-delay:2.50s; animation-duration:4.75s;"/>
+<circle cx="335" cy="112" r="2.9" fill="#c4b5fd" class="node-b" style="animation-delay:1.92s; animation-duration:4.13s;"/>
+<circle cx="180" cy="15" r="3.1" fill="#c4b5fd" class="node-c" style="animation-delay:0.34s; animation-duration:4.15s;"/>
+<circle cx="749" cy="52" r="2.5" fill="#c4b5fd" class="node-a" style="animation-delay:3.13s; animation-duration:4.38s;"/>
+<circle cx="885" cy="15" r="2.3" fill="#c4b5fd" class="node-b" style="animation-delay:0.71s; animation-duration:4.47s;"/>
+<circle cx="341" cy="258" r="2.4" fill="#c4b5fd" class="node-c" style="animation-delay:3.20s; animation-duration:4.93s;"/>
+<circle cx="412" cy="285" r="2.8" fill="#c4b5fd" class="node-a" style="animation-delay:1.61s; animation-duration:4.87s;"/>
+<circle cx="833" cy="112" r="2.0" fill="#c4b5fd" class="node-b" style="animation-delay:0.68s; animation-duration:2.82s;"/>
+<circle cx="885" cy="42" r="2.0" fill="#c4b5fd" class="node-c" style="animation-delay:3.62s; animation-duration:4.52s;"/>
+<circle cx="526" cy="195" r="2.7" fill="#c4b5fd" class="node-a" style="animation-delay:3.31s; animation-duration:4.95s;"/>
+<circle cx="471" cy="285" r="2.0" fill="#c4b5fd" class="node-b" style="animation-delay:1.40s; animation-duration:3.87s;"/>
+<circle cx="544" cy="234" r="2.7" fill="#c4b5fd" class="node-c" style="animation-delay:0.06s; animation-duration:4.93s;"/>
+<circle cx="642" cy="285" r="2.4" fill="#c4b5fd" class="node-a" style="animation-delay:2.11s; animation-duration:4.83s;"/>
+<circle cx="60" cy="59" r="2.1" fill="#c4b5fd" class="node-b" style="animation-delay:3.49s; animation-duration:4.57s;"/>
+<circle cx="176" cy="162" r="2.1" fill="#c4b5fd" class="node-c" style="animation-delay:1.01s; animation-duration:3.23s;"/>
+<circle cx="528" cy="253" r="2.4" fill="#c4b5fd" class="node-a" style="animation-delay:2.35s; animation-duration:3.15s;"/>
+<circle cx="399" cy="285" r="2.3" fill="#c4b5fd" class="node-b" style="animation-delay:0.52s; animation-duration:4.78s;"/>
+<circle cx="700" cy="53" r="3.1" fill="#c4b5fd" class="node-c" style="animation-delay:1.83s; animation-duration:3.96s;"/>
+<circle cx="885" cy="129" r="2.5" fill="#c4b5fd" class="node-a" style="animation-delay:1.68s; animation-duration:4.79s;"/>
+<circle cx="753" cy="217" r="1.8" fill="#c4b5fd" class="node-b" style="animation-delay:2.13s; animation-duration:3.81s;"/>
+<circle cx="838" cy="279" r="1.8" fill="#c4b5fd" class="node-c" style="animation-delay:1.76s; animation-duration:2.96s;"/>
+<circle cx="192" cy="79" r="2.5" fill="#c4b5fd" class="node-a" style="animation-delay:3.20s; animation-duration:2.93s;"/>
+<circle cx="59" cy="15" r="2.3" fill="#c4b5fd" class="node-b" style="animation-delay:2.90s; animation-duration:3.89s;"/>
+<circle cx="273" cy="223" r="2.9" fill="#c4b5fd" class="node-c" style="animation-delay:2.07s; animation-duration:3.89s;"/>
+<circle cx="353" cy="126" r="2.1" fill="#c4b5fd" class="node-a" style="animation-delay:0.42s; animation-duration:3.90s;"/>
+<circle cx="431" cy="162" r="2.5" fill="#c4b5fd" class="node-b" style="animation-delay:1.11s; animation-duration:4.43s;"/>
+<circle cx="561" cy="285" r="3.1" fill="#c4b5fd" class="node-c" style="animation-delay:2.25s; animation-duration:4.40s;"/>
+<circle cx="445" cy="203" r="2.5" fill="#c4b5fd" class="node-a" style="animation-delay:1.77s; animation-duration:4.03s;"/>
+<circle cx="395" cy="285" r="2.4" fill="#c4b5fd" class="node-b" style="animation-delay:2.05s; animation-duration:4.23s;"/>
+<circle cx="200" cy="97" r="3.1" fill="#c4b5fd" class="node-c" style="animation-delay:2.13s; animation-duration:3.70s;"/>
+<circle cx="137" cy="212" r="3.1" fill="#c4b5fd" class="node-a" style="animation-delay:2.80s; animation-duration:4.69s;"/>
+<circle cx="206" cy="154" r="3.1" fill="#c4b5fd" class="node-b" style="animation-delay:1.04s; animation-duration:3.90s;"/>
+<circle cx="39" cy="272" r="2.0" fill="#c4b5fd" class="node-c" style="animation-delay:3.36s; animation-duration:2.84s;"/>
+<circle cx="599" cy="183" r="2.1" fill="#c4b5fd" class="node-a" style="animation-delay:1.77s; animation-duration:2.68s;"/>
+<circle cx="689" cy="65" r="2.9" fill="#c4b5fd" class="node-b" style="animation-delay:0.29s; animation-duration:4.17s;"/>
+<circle cx="428" cy="221" r="2.8" fill="#c4b5fd" class="node-c" style="animation-delay:3.59s; animation-duration:2.89s;"/>
+<circle cx="503" cy="173" r="3.0" fill="#c4b5fd" class="node-a" style="animation-delay:2.64s; animation-duration:2.86s;"/>
+<circle cx="233" cy="245" r="3.1" fill="#c4b5fd" class="node-b" style="animation-delay:3.87s; animation-duration:3.05s;"/>
+<circle cx="446" cy="192" r="3.2" fill="#c4b5fd" class="node-c" style="animation-delay:1.59s; animation-duration:3.72s;"/>
+<circle cx="20" cy="97" r="2.4" fill="#c4b5fd" class="node-a" style="animation-delay:3.33s; animation-duration:2.90s;"/>
+<circle cx="15" cy="235" r="2.1" fill="#c4b5fd" class="node-b" style="animation-delay:2.06s; animation-duration:3.35s;"/>
+<circle cx="232" cy="212" r="1.8" fill="#c4b5fd" class="node-c" style="animation-delay:1.27s; animation-duration:4.31s;"/>
+<circle cx="380" cy="285" r="1.8" fill="#c4b5fd" class="node-a" style="animation-delay:2.22s; animation-duration:3.60s;"/>
+    </g>
+
+    <rect class="sweep" x="0" y="0" width="220" height="300" fill="url(#sweepGrad)"/>
+  </g>
+
+  <rect x="2" y="2" width="896" height="296" rx="18" fill="none" stroke="url(#border)" stroke-width="2.2"/>
+
+  <!-- Typing title -->
+  <g filter="url(#glow)">
+    <text x="240.3" y="140" font-family="DejaVu Sans, Verdana, sans-serif" font-size="62" font-weight="bold" fill="url(#textGrad)" opacity="0" letter-spacing="1">C<animate attributeName="opacity" from="0" to="1" begin="0.40s" dur="0.05s" fill="freeze"/></text>
+    <text x="285.8" y="140" font-family="DejaVu Sans, Verdana, sans-serif" font-size="62" font-weight="bold" fill="url(#textGrad)" opacity="0" letter-spacing="1">O<animate attributeName="opacity" from="0" to="1" begin="0.50s" dur="0.05s" fill="freeze"/></text>
+    <text x="338.5" y="140" font-family="DejaVu Sans, Verdana, sans-serif" font-size="62" font-weight="bold" fill="url(#textGrad)" opacity="0" letter-spacing="1">D<animate attributeName="opacity" from="0" to="1" begin="0.60s" dur="0.05s" fill="freeze"/></text>
+    <text x="389.9" y="140" font-family="DejaVu Sans, Verdana, sans-serif" font-size="62" font-weight="bold" fill="url(#textGrad)" opacity="0" letter-spacing="1">E<animate attributeName="opacity" from="0" to="1" begin="0.70s" dur="0.05s" fill="freeze"/></text>
+    <text x="432.3" y="140" font-family="DejaVu Sans, Verdana, sans-serif" font-size="62" font-weight="bold" fill="url(#textGrad)" opacity="0" letter-spacing="1">&#160;<animate attributeName="opacity" from="0" to="1" begin="0.80s" dur="0.05s" fill="freeze"/></text>
+    <text x="453.9" y="140" font-family="DejaVu Sans, Verdana, sans-serif" font-size="62" font-weight="bold" fill="url(#textGrad)" opacity="0" letter-spacing="1">G<animate attributeName="opacity" from="0" to="1" begin="0.90s" dur="0.05s" fill="freeze"/></text>
+    <text x="504.8" y="140" font-family="DejaVu Sans, Verdana, sans-serif" font-size="62" font-weight="bold" fill="url(#textGrad)" opacity="0" letter-spacing="1">I<animate attributeName="opacity" from="0" to="1" begin="1.00s" dur="0.05s" fill="freeze"/></text>
+    <text x="527.8" y="140" font-family="DejaVu Sans, Verdana, sans-serif" font-size="62" font-weight="bold" fill="url(#textGrad)" opacity="0" letter-spacing="1">R<animate attributeName="opacity" from="0" to="1" begin="1.10s" dur="0.05s" fill="freeze"/></text>
+    <text x="575.6" y="140" font-family="DejaVu Sans, Verdana, sans-serif" font-size="62" font-weight="bold" fill="url(#textGrad)" opacity="0" letter-spacing="1">L<animate attributeName="opacity" from="0" to="1" begin="1.20s" dur="0.05s" fill="freeze"/></text>
+    <text x="615.1" y="140" font-family="DejaVu Sans, Verdana, sans-serif" font-size="62" font-weight="bold" fill="url(#textGrad)" opacity="0" letter-spacing="1">S<animate attributeName="opacity" from="0" to="1" begin="1.30s" dur="0.05s" fill="freeze"/></text>
+  </g>
+
+  <rect class="cursor" y="88" width="4" height="62" fill="#e9d5ff">
+    <animate attributeName="x" begin="0s" dur="1.00s" fill="freeze"
+      values="240.3;285.8;338.5;389.9;432.3;453.9;504.8;527.8;575.6;615.1;659.7"
+      keyTimes="0;0.2857;0.3571;0.4286;0.5000;0.5714;0.6429;0.7143;0.7857;0.8571;0.9286"
+      calcMode="discrete"/>
+  </rect>
+
+  <text x="241.1" y="182" font-family="Verdana, sans-serif" font-size="20" font-weight="bold" fill="#c4b5fd" class="subtitle" letter-spacing="0.5">Desenvolvimento de Sistemas &#8226; ETECVAV</text>
+
+  <g class="badge">
+    <rect x="280.0" y="215" width="340" height="34" rx="17" fill="#1a1030" stroke="#7c3aed" stroke-width="1.2"/>
+    <text x="450" y="237" font-family="Verdana, sans-serif" font-size="13" font-weight="bold" fill="#e9d5ff" text-anchor="middle">&#9995; Seja bem-vindo(a) ao nosso GitHub!</text>
+  </g>
+</svg>
