@@ -1,15 +1,13 @@
-<img src="https://capsule-render.vercel.app/api?type=waving&color=8A2BE2&height=180&section=header&text=CODE%20GIRLS&fontSize=60&fontColor=ffffff&fontAlignY=40&animation=fadeIn&desc=Desenvolvimento%20de%20Sistemas%20%E2%80%A2%20ETECVAV&descAlignY=58&descSize=20" width="100%"/>
+<p align="center">
+  <img src="./org-header-banner.svg" alt="Code Girls" width="100%">
+</p>
 
 
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Poppins&size=38&duration=3000&pause=1000&color=8A2BE2&center=true&vCenter=true&width=600&height=70&lines=Desenvolvimento+de+Sistemas;ETECVAV" alt="Typing SVG" />
-
 <br>
 
-![Banner](https://img.shields.io/badge/%F0%9F%92%BB-CODE%20GIRLS-8A2BE2?style=for-the-badge&labelColor=1a1a2e)
-![ETEC](https://img.shields.io/badge/ETECVAV-Desenvolvimento%20de%20Sistemas-6C3FC5?style=for-the-badge&labelColor=1a1a2e)
-![Status](https://img.shields.io/badge/status-aprendendo%20sempre-success?style=for-the-badge&labelColor=1a1a2e)
+
 
 <br>
 
