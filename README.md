@@ -113,11 +113,13 @@ Aqui você encontrará os repositórios das disciplinas do nosso curso técnico,
 
 ### ✅ Concluído
 - Lógica de Programação (Portugol)
+- Lógica de Programação (C++)
 - Introução a HTML e CSS
 - início a Sistemas Embarcados 
 
 ### 📚 Estudando
 - Linguagem SQL
+- Lógica de Programação em Python
 - Lógica de Programação em C++
 
 <br>
