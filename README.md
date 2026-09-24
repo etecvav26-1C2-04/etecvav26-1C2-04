@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./org-header-banner.svg" alt="Code Girls" width="100%">
+  <img src="assets/org-header-banner.svg" alt="Code Girls" width="100%">
 </p>
 <div align="center">
 
